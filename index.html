@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="icon" type="image/svg+xml" href="/vite.svg" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Maze of the Minotaur</title>
+	</head>
+	<body>
+		<div id="app">
+			<div id="app-maze-window">
+				<h4>The Maze of the Minotaur</h4>
+				<pre id="mazeOutput"></pre>
+			</div>
+			<div id="app-interface-window">
+				<h5>Inventory</h5>
+				<div id="app-inventory-controls">
+					<select
+						id="inventoryOutput"
+						name="inventoryOutput"
+						size="4"
+					>
+						<option value=""><em>Empty</em></option>
+					</select>
+					<button id="inventory-useButton" style="margin-left: auto">
+						Use
+					</button>
+				</div>
+				<div id="app-controls-window">
+					<button id="goNorthButton">North</button>
+					<button id="goWestButton">West</button>
+					<button id="goEastButton">East</button>
+					<button id="goSouthButton">South</button>
+				</div>
+			</div>
+			<div id="app-text-output"></div>
+			<div id="app-modal">
+				<h4 id="app-modal-result">You Died!</h4>
+				<div id="app-modal-button">
+					<button>Play Again</button>
+				</div>
+			</div>
+		</div>
+		<script type="module" src="/src/main.ts"></script>
+	</body>
+</html>
