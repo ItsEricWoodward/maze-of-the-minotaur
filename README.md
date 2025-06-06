@@ -14,3 +14,15 @@ The code is kind of a hot mess asa result, but I plan to clean it as the days pr
 ### Technology
 
 Built using TypeScript, powered by Vite.
+
+### Play It Online
+
+You can find it at https://www.itsericwoodward.com/webtoys/maze/.
+
+### Run It Locally
+
+1. Check out repo.
+2. `npm ci`
+3. `npm run dev` to test it out, or `npm run build` to build the JS (in `/dist`).
+
+Share and enjoy!
