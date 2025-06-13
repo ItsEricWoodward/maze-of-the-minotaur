@@ -25,6 +25,6 @@ You can find it at https://www.itsericwoodward.com/webtoys/maze/.
 2. `npm ci`
 3. `npm run dev` to test it out, or `npm run build` to build the JS (in `/dist`).
 
-Thanks to everyone who voted for it! It means so much to me.
+Thanks to everyone who voted for it. It means alot!
 
 Share and enjoy!
