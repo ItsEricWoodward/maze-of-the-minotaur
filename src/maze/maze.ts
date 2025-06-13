@@ -38,8 +38,8 @@ const DEFAULT_ITEMS: (Item | KeyItem)[] = [
 		type: ItemType.Weapon,
 		useFailText: "You swing wildly in the air.",
 		useSuccessText:
-			"As the Minotaur lunges at you, you swing at him with the " +
-			"pickaxe. It strikes him and explodes as it hits him, stunning him.",
+			"As the Minotaur lunges at you, you swing with the " +
+			"pickaxe. It strikes him and explodes, stunning him.",
 	},
 	{
 		id: "spear",
@@ -50,8 +50,8 @@ const DEFAULT_ITEMS: (Item | KeyItem)[] = [
 		type: ItemType.Weapon,
 		useFailText: "You stab wildly at the air.",
 		useSuccessText:
-			"As the Minotaur lunges at you, you stab at him with the " +
-			"spear. It strikes him and explodes as it hits him, stunning him.",
+			"As the Minotaur lunges at you, you stab with the " +
+			"spear. It strikes him and explodes, stunning him.",
 	},
 ];
 
@@ -417,12 +417,13 @@ const checkForWin = () => {
 		gameMessage = `You escaped the Minotaur in ${turnCount} turns. YOU HAVE WON!`;
 		modalMessage = "You Have Won!";
 	}
+	return !isRunning;
 };
 
 const updateGameState = () => {
 	turnCount++;
-	checkForWin();
-	checkForCollision();
+	if (checkForWin()) return;
+	// checkForCollision();
 	markVisited();
 	collectItems();
 	moveMonster(pickMonsterDirection());
@@ -508,14 +509,6 @@ export const renderMazeRL = () =>
 
 				const isAdjacent = isAdjacentToPlayer(rownum, colnum);
 
-				// player
-				if (rownum === player.row && colnum === player.col) {
-					return getSpan(
-						turnCount % 2 ? "&#x1FBC5;" : "&#x1FBC6;",
-						"yellow"
-					);
-				}
-
 				// items
 				items.forEach((item) => {
 					if (
@@ -546,6 +539,11 @@ export const renderMazeRL = () =>
 
 						gameMessage = `A large horn sits in a room to the ${hornDir}.`;
 					}
+				}
+
+				// player
+				if (rownum === player.row && colnum === player.col) {
+					return getSpan(PLAYER_MARKER, "yellow");
 				}
 
 				if (val === MONSTER_START) {
