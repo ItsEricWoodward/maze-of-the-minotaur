@@ -27,4 +27,16 @@ You can find it at https://www.itsericwoodward.com/webtoys/maze/ or https://itse
 
 Thanks to everyone who voted for it. It means alot!
 
+### Planned Enhancements
+
+-   Add title screen / modal with start button
+-   Improve endgame modals
+-   Finish adding tests to game, main, and anything else that needs coverage.
+-   Add license to the combined JS file
+    -   Target compatibility with LibreJS: https://www.gnu.org/software/librejs/free-your-javascript.html
+-   Add CSP (maybe via nonce w/ TSC?)
+-   remove extraneous fonts
+-   spruce up landing page (link to repo, site)
+-   make into an app
+
 Share and enjoy!
