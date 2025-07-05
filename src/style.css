@@ -101,7 +101,7 @@ pre {
 }
 
 #app-maze-window {
-  flex-basis: 60%;
+  flex-basis: 50%;
   order: 1;
 }
 
@@ -127,6 +127,7 @@ pre {
 
 #app-text-output {
   flex-basis: 100%;
+  min-height: 3rem;
   order: 2;
   padding: .5rem;
   width: 95%;
@@ -189,6 +190,7 @@ button:focus-visible {
   }
 
   #app-text-output {
-    order: 3;  
+    min-height: 1rem;
+    order: 3;
   }
 }
