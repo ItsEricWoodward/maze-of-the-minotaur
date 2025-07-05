@@ -1,11 +1,12 @@
 {
   "name": "maze-of-the-minotaur",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "homepage": "http://itsericwoodward.github.io/maze-of-the-minotaur",
   "type": "module",
   "scripts": {
     "build": "NODE_ENV=production tsc && vite build",
-    "deploy": "gh-pages -d dist",
+    "build:gh-pages": "NODE_ENV=production tsc && vite build --config vite.config.gh-pages.js",
+    "deploy": "npm run build:gh-pages && gh-pages -d dist",
     "dev": "vite",
     "preview": "vite preview",
     "test": "vitest"

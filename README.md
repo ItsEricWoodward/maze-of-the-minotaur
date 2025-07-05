@@ -17,7 +17,7 @@ Built using TypeScript, powered by Vite.
 
 ### Play It Online
 
-You can find it at https://www.itsericwoodward.com/webtoys/maze/.
+You can find it at https://www.itsericwoodward.com/webtoys/maze/ or https://itsericwoodward.github.io/maze-of-the-minotaur/.
 
 ### Run It Locally
 

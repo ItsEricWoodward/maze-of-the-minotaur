@@ -18,7 +18,7 @@ export const renderInventoryOptions = (inventory: GameItem[]) => {
 };
 
 const renderSpan = (text: string, color: string) =>
-    `<span style="color: ${color}">${text === SPACE ? '&ensp;' : text}</span>`;
+    `<span style="color: ${color}">${text}</span>`;
 
 export const renderMazeRoguelike = ({
     items,

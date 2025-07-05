@@ -60,9 +60,9 @@ describe('render', () => {
                 player,
             });
             expect(result).toBe(
-                `<span style="color: grey">&ensp;</span><span style="color: grey">&#x2591;</span><span style="color: grey">&ensp;</span>
+                `<span style="color: grey"> </span><span style="color: grey">&#x2591;</span><span style="color: grey"> </span>
 <span style="color: grey">&#x2591;</span><span style="color: yellow">P</span><span style="color: grey">&#x2591;</span>
-<span style="color: grey">&ensp;</span><span style="color: grey">&#x2591;</span><span style="color: grey">&ensp;</span>`
+<span style="color: grey"> </span><span style="color: grey">&#x2591;</span><span style="color: grey"> </span>`
             );
         });
 
@@ -76,9 +76,9 @@ describe('render', () => {
                 player,
             });
             expect(result).toBe(
-                `<span style="color: grey">&ensp;</span><span style="color: grey">&#x2591;</span><span style="color: grey">&ensp;</span>
+                `<span style="color: grey"> </span><span style="color: grey">&#x2591;</span><span style="color: grey"> </span>
 <span style="color: grey">&#x2591;</span><span style="color: yellow">P</span><span style="color: grey">&#x2591;</span>
-<span style="color: grey">&ensp;</span><span style="color: grey">&#x2591;</span><span style="color: grey">&ensp;</span>`
+<span style="color: grey"> </span><span style="color: grey">&#x2591;</span><span style="color: grey"> </span>`
             );
         });
 
@@ -90,9 +90,9 @@ describe('render', () => {
                 player,
             });
             expect(result).toBe(
-                `<span style="color: grey">&ensp;</span><span style="color: grey">&#x2591;</span><span style="color: grey">&ensp;</span>
+                `<span style="color: grey"> </span><span style="color: grey">&#x2591;</span><span style="color: grey"> </span>
 <span style="color: grey">&#x2591;</span><span style="color: yellow">P</span><span style="color: grey">&#x2591;</span>
-<span style="color: grey">&ensp;</span><span style="color: grey">&#x2591;</span><span style="color: grey">&ensp;</span>`
+<span style="color: grey"> </span><span style="color: grey">&#x2591;</span><span style="color: grey"> </span>`
             );
         });
     });
