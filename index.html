@@ -3,10 +3,16 @@
 	<head>
 		<meta charset="UTF-8" />
 		<link rel="icon" href="/maze-of-the-minotaur/favicon.ico" />
+		<link rel="manifest" href="/maze-of-the-minotaur/assets/manifest-DqIVzLxs.json" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Maze of the Minotaur</title>
-		<script type="module" crossorigin src="/maze-of-the-minotaur/assets/index-LqpgI2nb.js"></script>
-		<link rel="stylesheet" crossorigin href="/maze-of-the-minotaur/assets/index-BSb0POLI.css">
+		<style>
+			body {
+				display: none;
+			}
+		</style>
+		<script type="module" crossorigin src="/maze-of-the-minotaur/assets/index-CPneIAsl.js"></script>
+		<link rel="stylesheet" crossorigin href="/maze-of-the-minotaur/assets/index-CQGyGXep.css">
 	</head>
 	<body>
 		<div id="app">
@@ -24,7 +30,7 @@
 					>
 						<option value=""><em>Empty</em></option>
 					</select>
-					<button id="inventory-useButton" style="margin-left: auto">
+					<button id="inventory-useButton">
 						Use
 					</button>
 				</div>
@@ -42,6 +48,34 @@
 					<button>Play Again</button>
 				</div>
 			</div>
+			<div id="app-title-screen">
+				<img src="title.png" id="app-title-logo" />
+				<p>
+					by Eric Woodward<br />&lt;mazelord (at) itsericwoodward.com%gt;
+				</p>
+				<div id="app-title-buttons">
+					<button class="instructions-button"><u>I</u>nstructions</button>
+					<button class="start-maze-button">Enter the <u>M</u>aze!</button>
+				</div>
+			</div>
+			<div id="app-instructions-modal">
+				<h3 id="app-modal-result">Instructions</h3>
+				<ul>
+					<li>Find some weapons to defend yourself.</li>
+					<li>Fix the horn to summon the minotaur.</li>
+					<li>The only way out is to go around (or through) the Minotaur.</li>
+					<li>Pace yourself - the Minotaur only moves when you do.</li>
+					<li>Have fun!</li>
+				</ul>
+				<div id="app-instructions-buttons">
+					<button class="start-maze-button">Enter the <u>M</u>aze!</button>
+				</div>
+			</div>
+
+
 		</div>
+		<noscript>
+			We&apos;re sorry, but <strong>Maze of the Minotaur</strong> requires JavaScript to to be enabled in order to play.
+		</noscript>
 	</body>
 </html>

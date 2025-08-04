@@ -1,0 +1,14 @@
+{
+  "name": "Maze of the Minotaur",
+  "short_name": "MotM",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "type": "image/png",
+      "sizes": "32x32"
+    }
+  ],
+  "start_url": "https://itsericwoodward.github.io/maze-of-the-minotaur/",
+  "display": "standalone",
+  "id": "maze-of-the-minotaur"
+}
