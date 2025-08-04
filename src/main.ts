@@ -28,7 +28,21 @@ const body = document.body,
     goNorthButton = document.getElementById('goNorthButton'),
     goSouthButton = document.getElementById('goSouthButton'),
     goEastButton = document.getElementById('goEastButton'),
-    goWestButton = document.getElementById('goWestButton');
+    goWestButton = document.getElementById('goWestButton'),
+    titleScreen = document.getElementById('app-title-screen'),
+    instructionsScreen = document.getElementById('app-instructions-modal'),
+    instructionsButtons = document.querySelectorAll('.instructions-button'),
+    startMazeButtons = document.querySelectorAll('.start-maze-button');
+
+const showInstructionsScreen = () => {
+    instructionsScreen?.classList?.add?.('show');
+    titleScreen?.classList.add('hide');
+};
+
+const enterMaze = () => {
+    instructionsScreen?.classList?.remove?.('show');
+    titleScreen?.classList.add('hide');
+};
 
 const updateGameInterface = () => {
     if (mazeOutput) mazeOutput.innerHTML = renderMazeRoguelike();
@@ -67,44 +81,51 @@ if (inventoryUseButton) {
 }
 
 body.addEventListener('keydown', (event: KeyboardEvent) => {
-    if (event.key === 'ArrowUp' || event.key.toLocaleUpperCase() === 'N')
-        movePlayerNorth();
-    else if (event.key === 'ArrowDown' || event.key.toLocaleUpperCase() === 'S')
-        movePlayerSouth();
-    else if (event.key === 'ArrowLeft' || event.key.toLocaleUpperCase() === 'W')
-        movePlayerWest();
-    else if (
-        event.key === 'ArrowRight' ||
-        event.key.toLocaleUpperCase() === 'E'
-    )
-        movePlayerEast();
-    else if (event.key.toLocaleUpperCase() === 'H') useItem('mouthpiece');
+    const { key } = event ?? {};
+    const keyUpper = (key ?? '').toLocaleUpperCase();
+    if (key === 'ArrowUp' || keyUpper === 'N') movePlayerNorth();
+    else if (key === 'ArrowDown' || keyUpper === 'S') movePlayerSouth();
+    else if (key === 'ArrowLeft' || keyUpper === 'W') movePlayerWest();
+    else if (key === 'ArrowRight' || keyUpper === 'E') movePlayerEast();
+    else if (keyUpper === 'H') useItem('mouthpiece');
+    else if (keyUpper === 'I') showInstructionsScreen();
+    else if (key === 'Escape' || keyUpper === 'M') {
+        enterMaze();
+    }
 
     updateGameInterface();
 });
 
-document.getElementById('goNorthButton')?.addEventListener('click', () => {
+goNorthButton?.addEventListener('click', () => {
     movePlayerNorth();
     updateGameInterface();
 });
 
-document.getElementById('goSouthButton')?.addEventListener('click', () => {
+goSouthButton?.addEventListener('click', () => {
     movePlayerSouth();
     updateGameInterface();
 });
 
-document.getElementById('goWestButton')?.addEventListener('click', () => {
+goWestButton?.addEventListener('click', () => {
     movePlayerWest();
     updateGameInterface();
 });
 
-document.getElementById('goEastButton')?.addEventListener('click', () => {
+goEastButton?.addEventListener('click', () => {
     movePlayerEast();
     updateGameInterface();
 });
 
 document.getElementById('app-modal-button')?.addEventListener('click', () => {
     startGame();
+});
+
+instructionsButtons.forEach((element) => {
+    element.addEventListener('click', showInstructionsScreen);
+});
+
+startMazeButtons.forEach((element) => {
+    element.addEventListener('click', enterMaze);
 });
 
 const startGame = () => {

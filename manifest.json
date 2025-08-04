@@ -1,0 +1,26 @@
+{
+  "name": "Maze of the Minotaur",
+  "background_color": "#131516",
+  "display": "standalone",
+  "icons": [
+    {
+      "src": "/maze-of-the-minotaur/images/icon32.png",
+      "type": "image/png",
+      "sizes": "32x32"
+    },
+    {
+      "src": "/maze-of-the-minotaur/images/icon144.png",
+      "type": "image/png",
+      "sizes": "144x144"
+    },
+    {
+      "src": "/maze-of-the-minotaur/images/icon512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "id": "maze-of-the-minotaur",
+  "short_name": "MotM",
+  "start_url": "https://itsericwoodward.github.io/maze-of-the-minotaur/",
+  "theme_color": "grey"
+}

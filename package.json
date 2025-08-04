@@ -1,6 +1,6 @@
 {
   "name": "maze-of-the-minotaur",
-  "version": "0.3.2",
+  "version": "0.9.0",
   "homepage": "http://itsericwoodward.github.io/maze-of-the-minotaur",
   "type": "module",
   "scripts": {
@@ -11,11 +11,14 @@
     "deploy": "gh-pages -d dist",
     "dev": "vite",
     "preview": "vite preview",
+    "tauri": "tauri",
     "test": "vitest"
   },
   "devDependencies": {
     "@eslint/js": "^9.30.1",
+    "@tauri-apps/cli": "^2.7.1",
     "@types/debug": "^4.1.12",
+    "@vitest/coverage-v8": "^3.2.4",
     "eslint": "^9.30.1",
     "gh-pages": "^6.3.0",
     "typescript": "~5.8.3",
