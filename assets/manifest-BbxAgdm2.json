@@ -4,9 +4,19 @@
   "display": "standalone",
   "icons": [
     {
-      "src": "favicon.ico",
+      "src": "/images/icon32.png",
       "type": "image/png",
       "sizes": "32x32"
+    },
+    {
+      "src": "/images/icon144.png",
+      "type": "image/png",
+      "sizes": "144x144"
+    },
+    {
+      "src": "/images/icon512.png",
+      "type": "image/png",
+      "sizes": "512x512"
     }
   ],
   "id": "maze-of-the-minotaur",
