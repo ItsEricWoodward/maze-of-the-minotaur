@@ -1,6 +1,7 @@
 {
   "name": "Maze of the Minotaur",
-  "short_name": "MotM",
+  "background_color": "#131516",
+  "display": "standalone",
   "icons": [
     {
       "src": "favicon.ico",
@@ -8,7 +9,8 @@
       "sizes": "32x32"
     }
   ],
+  "id": "maze-of-the-minotaur",
+  "short_name": "MotM",
   "start_url": "https://itsericwoodward.github.io/maze-of-the-minotaur/",
-  "display": "standalone",
-  "id": "maze-of-the-minotaur"
+  "theme_color": "grey"
 }
