@@ -1,4 +1,4 @@
-import { Direction, type ActorType } from './maze.types';
+import { Direction, type ActorType } from './maze.types.ts';
 
 export default (yStart: number, xStart: number) => {
     let lastDirection: Direction,

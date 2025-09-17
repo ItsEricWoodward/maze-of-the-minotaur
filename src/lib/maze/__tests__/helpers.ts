@@ -1,4 +1,4 @@
-import { ItemType } from '../maze.types';
+import { ItemType } from '../maze.types.ts';
 
 export const getItems = (xStart: number, yStart: number) => [
     {

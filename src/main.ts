@@ -1,5 +1,5 @@
 import './style.css';
-import Minotaur from './lib/maze-minotaur';
+import Minotaur from './lib/maze-minotaur/index.ts';
 
 const {
     canPlayerMoveEast,

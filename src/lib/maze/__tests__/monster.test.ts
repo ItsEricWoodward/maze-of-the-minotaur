@@ -1,6 +1,7 @@
 import { describe, expect, it } from 'vitest';
-import { getValueUnder } from './helpers';
-import Monster from '../monster'; // updateInventory, // move, // isAdjacent, // init, // getLocation, // getLastDirection, // getInventory,
+
+import { getValueUnder } from './helpers.ts';
+import Monster from '../monster.ts';
 
 describe('monster', () => {
     it('should initialize as expected', () => {

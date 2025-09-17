@@ -1,1 +1,1 @@
-export { default } from './maze-minotaur';
+export { default } from './maze-minotaur.ts';

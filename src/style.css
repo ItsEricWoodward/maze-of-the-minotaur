@@ -143,12 +143,26 @@
 }
 
 a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
+  color: red;
+  text-decoration: none;
+  transition: 
+    background-color .5s,
+    border-radius .5s,
+    color .5s,
+    font-weight .5s,
+    padding .5s;
 }
+
+a:visited {
+  color: #b30000;
+}
+
 a:hover {
-  color: #535bf2;
+  background-color: red;
+  border-radius: .5rem;
+  color: #010101;
+  font-weight: bold;
+  padding: .5rem;
 }
 
 body {
@@ -330,6 +344,30 @@ pre {
   visibility: hidden;
 }
 
+#app-title-sourceLink {
+  color: red;
+  text-decoration: none;
+  transition: 
+    background-color .25s,
+    border-radius .25s,
+    color .25s,
+    font-weight .25s,
+    padding .25s;
+}
+
+#app-title-sourceLink:visited {
+  color: #b30000;
+}
+
+#app-title-sourceLink:hover {
+  background-color: red;
+  border-radius: .5rem;
+  color: #010101;
+  font-weight: bold;
+  padding: .5rem;
+}
+
+
 #inventory-useButton {
   margin-left: auto;
 }
@@ -388,7 +426,11 @@ button:disabled {
 }
 
 button:hover {
-  border-color: #646cff;
+  border-color: red;
+}
+
+button:disabled:hover {
+  border-color: transparent;button:hover
 }
 
 button:focus,

@@ -1,10 +1,10 @@
 [package]
 name = "maze-of-the-minotaur"
-version = "0.1.0"
-description = ""
-authors = ["you"]
+version = "0.9.1"
+description = "A stupid, simple Roguelike-lite designed for playing short games on your mobile phone. Explore the maze and face the Minotaur... IF YOU DARE!"
+authors = ["itsericwoodward.com"]
 license = "MIT"
-repository = ""
+repository = "https://github.com/ItsEricWoodward/maze-of-the-minotaur"
 edition = "2021"
 rust-version = "1.77.2"
 
@@ -15,11 +15,11 @@ name = "app_lib"
 crate-type = ["staticlib", "cdylib", "rlib"]
 
 [build-dependencies]
-tauri-build = { version = "2.3.1", features = [] }
+tauri-build = { version = "2.4.1", features = [] }
 
 [dependencies]
 serde_json = "1.0"
 serde = { version = "1.0", features = ["derive"] }
 log = "0.4"
-tauri = { version = "2.7.0", features = [] }
+tauri = { version = "2.8.0", features = [] }
 tauri-plugin-log = "2"

@@ -6,12 +6,12 @@ import {
     type MazeType,
     type MonsterType,
     type PlayerType,
-} from './maze.types';
-import Player from './player';
-import Monster from './monster';
-import Maze from './maze';
-import { MONSTER_START, PLAYER_START, SPACE, WALL } from './maze.constants';
-import { renderInventoryOptions, renderMazeRoguelike } from './game.render';
+} from './maze.types.ts';
+import Player from './player.ts';
+import Monster from './monster.ts';
+import Maze from './maze.ts';
+import { MONSTER_START, PLAYER_START, SPACE, WALL } from './maze.constants.ts';
+import { renderInventoryOptions, renderMazeRoguelike } from './game.render.ts';
 
 const startsWithVowel = (value: string) =>
     ['a', 'e', 'i', 'o', 'u'].includes(

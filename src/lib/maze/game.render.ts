@@ -5,8 +5,13 @@ import {
     PLAYER_START,
     SPACE,
     WALL,
-} from './maze.constants';
-import type { GameItem, MazeType, MonsterType, PlayerType } from './maze.types';
+} from './maze.constants.ts';
+import type {
+    GameItem,
+    MazeType,
+    MonsterType,
+    PlayerType,
+} from './maze.types.ts';
 
 export const renderInventoryOptions = (inventory: GameItem[]) => {
     if (inventory.length === 0)

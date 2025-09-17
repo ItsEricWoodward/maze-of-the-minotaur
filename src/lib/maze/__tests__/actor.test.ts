@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest';
-import { getValueUnder } from './helpers';
-import Actor from '../actor'; // updateInventory, // move, // isAdjacent, // init, // getLocation, // getLastDirection, // getInventory,
-import { Direction } from '../maze.types';
+import { getValueUnder } from './helpers.ts';
+import Actor from '../actor.ts';
+import { Direction } from '../maze.types.ts';
 
 describe('actor', () => {
     it('should initialize in the indicated location', () => {

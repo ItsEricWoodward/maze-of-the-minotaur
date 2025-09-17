@@ -1,4 +1,4 @@
-import { ItemType, type Item, type KeyItem } from '../maze/maze.types';
+import { ItemType, type Item, type KeyItem } from '../maze/maze.types.ts';
 
 export const ACTIVATION_KEY_ID = 'mouthpiece',
     HORN_MARKER = 'H',

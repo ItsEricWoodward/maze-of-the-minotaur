@@ -1,5 +1,5 @@
-import Actor from './actor';
-import type { Direction, MonsterConfig } from './maze.types';
+import Actor from './actor.ts';
+import type { Direction, MonsterConfig } from './maze.types.ts';
 
 export default ({ activationKeyID, startX, startY }: MonsterConfig) => {
     let hasBeenActivated = false;

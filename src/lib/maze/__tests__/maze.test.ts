@@ -1,8 +1,8 @@
 import { describe, expect, it } from 'vitest';
-import Maze from '../maze';
 
-import { getValueUnder } from './helpers';
-import { SPACE, WALL } from '../maze.constants';
+import Maze from '../maze.ts';
+import { getValueUnder } from './helpers.ts';
+import { SPACE, WALL } from '../maze.constants.ts';
 
 describe('Maze', () => {
     it('should initialize as expected', () => {

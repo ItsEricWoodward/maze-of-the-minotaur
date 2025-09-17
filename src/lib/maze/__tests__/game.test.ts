@@ -1,8 +1,8 @@
 import { beforeEach, describe, expect, it } from 'vitest';
 
-import Game from '../game';
-import { type GameConfigMessages, type GameType } from '../maze.types';
-import { MONSTER_START } from '../maze.constants';
+import Game from '../game.ts';
+import { type GameConfigMessages, type GameType } from '../maze.types.ts';
+import { MONSTER_START } from '../maze.constants.ts';
 
 describe('game', () => {
     let gameInstance: GameType;

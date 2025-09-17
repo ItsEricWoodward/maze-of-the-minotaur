@@ -1,5 +1,5 @@
-import { type Item, type PlayerType } from './maze.types';
-import Actor from './actor';
+import { type Item, type PlayerType } from './maze.types.ts';
+import Actor from './actor.ts';
 
 export default (yStart: number, xStart: number) => {
     let inventory: Item[] = [];

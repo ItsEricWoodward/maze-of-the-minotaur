@@ -1,11 +1,11 @@
 import { describe, expect, it } from 'vitest';
-import { renderInventoryOptions, renderMazeRoguelike } from '../game.render';
+import { renderInventoryOptions, renderMazeRoguelike } from '../game.render.ts';
 import type {
     GameItem,
     MazeType,
     MonsterType,
     PlayerType,
-} from '../maze.types';
+} from '../maze.types.ts';
 
 describe('render', () => {
     describe('renderInventoryOptions', () => {

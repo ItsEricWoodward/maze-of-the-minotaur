@@ -1,7 +1,7 @@
 import Debug from 'debug';
 const debug = Debug('Maze');
 
-import { MONSTER_MARKER, SPACE, WALL } from './maze.constants';
+import { MONSTER_MARKER, SPACE, WALL } from './maze.constants.ts';
 
 export default (rows: number, cols: number) => {
     const occupiedSpaces = [MONSTER_MARKER, WALL];

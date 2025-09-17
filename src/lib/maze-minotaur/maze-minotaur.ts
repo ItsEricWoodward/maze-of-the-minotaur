@@ -1,10 +1,10 @@
-import Game from '../maze/game';
+import Game from '../maze/game.ts';
 import {
     ACTIVATION_KEY_ID,
     HORN_MARKER,
     ITEMS,
     MESSAGES,
-} from './maze-minotaur.constants';
+} from './maze-minotaur.constants.ts';
 
 export default () => {
     const gapCols = 16, // up to 16?
